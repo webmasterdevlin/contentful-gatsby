@@ -2,7 +2,7 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `HUGSI`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -17,7 +17,7 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: {
         spaceId: "7ng4m7rjptjh",
-        accessToken: "e_gyt2CHzL1TnSextVJOyORPRDM0rIKd89Xm6psuR9g",
+        accessToken: process.env.CONTENTFUL_API_TOKEN,
       },
     },
     `gatsby-plugin-react-helmet`,
